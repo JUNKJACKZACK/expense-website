@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Expense Website</title>
+	<title>Login</title>
 </head>
 <body>
-
 	<form>
 		<h1>Welcome Back!</h1>
-		Full Name: <input type="text" name="fullname"><br>
-		Email: <input type="email" name="email" required><br>
-		Password: <input type="password" name="password" required min="8"><br>
-		<input type="submit" value="Login">
-		
+		<form action="login.html">
+			Username: <input type="text" id="username" name="username" required><br>
+			Password: <input type="password" id="password" name="password" required min="8"><br>
+			<input type="submit" value="Register" onclick="checkData()">
+		</form>
 	</form>
+	<script src="login.js"></script>
 </body>
 </html>

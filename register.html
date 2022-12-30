@@ -3,19 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Expense Website</title>
+	<title>Register</title>
 </head>
 <body>
 	<h1>Welcome to the Expense Website!</h1>
 	<h3>This is the site for gig workers needing a simple solution of tracking expensess.</h3>
-
-	<form>
-		
-		Full Name: <input type="text" name="fullname"><br>
-		Email: <input type="email" name="email" required><br>
-		Password: <input type="password" name="password" required min="8"><br>
-		<input type="submit" value="Register">
-		
+	<!-- This brings you to the login page once you are registered -->
+	<form action="login.html">
+		Username: <input type="text" id="username" name="username" required><br>
+		Password: <input type="password" id="password" name="password" required min="8"><br>
+		<input type="submit" value="Register" onclick="addData()">
 	</form>
+	<script src="register.js"></script>
 </body>
 </html>
