@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="new-expense-style.css">
+	<title>Zachary D.</title>
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="nav-brand">
+			<h2>The Expense Website</h2>
+		</div>
+		<div class="nav-menu">
+			<ul class="nav-links">
+				<li class="nav-item"><a href="index.html">Back HOME</a></li>
+			</ul>
+		</div>
+	</nav>
+    <form>
+        <label for="date">Record Date and Time</label><br>
+        <input type="datetime-local" id="date"><br>
+
+        <br><label>What is the Expense type?</label><br>
+        <input type="checkbox" id="expense-office">
+        <label for="expense-office">Office Supplies</label><br>
+        <input type="checkbox" id="expense-inventory">
+        <label for="expense-inventory">Inventory</label><br>
+        <input type="checkbox" id="expense-motorvehicle">
+        <label for="expense-motorvehicle">Gas/Vehicle</label><br>
+        <input type="checkbox" id="expense-donation">
+        <label for="expense-donation">Donations</label><br>
+        <input type="checkbox" id="expense-bill">
+        <label for="expense-bill">Bills</label><br>
+        <input type="checkbox" id="expense-misc">
+        <label for="expense-misc">Misc.</label><br>
+
+        <br><label for="expense-description">Description of Expense</label><br>
+        <input type="text" id="expense-description"><br>
+
+        <br><label for="expense-total">Total of Expense $</label>
+        <input type="number" id="expense-total"><br>
+
+        <br><label>Type of Payment</label><br>
+        <label for="expense-payment-card">Credit/Debit Card</label>
+        <input type="radio" id="expense-payment-card"><br>
+        <label for="expense-payment-cash">Cash</label>
+        <input type="radio" id="expense-payment-cash"><br>
+        <label for="expense-payment-giftcard">Giftcard</label>
+        <input type="radio" id="expense-payment-giftcard"><br>
+    </form>
+</body>
+</html>
